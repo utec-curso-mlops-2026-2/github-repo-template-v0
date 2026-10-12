@@ -5,13 +5,13 @@ Pipeline de Machine Learning que estima la probabilidad de incumplimiento de pag
 ## Estructura
 
 ```
-src/download-data.py              descarga los datos de entrada desde S3 a data/in/
-src/0-split-dataset.py              separa train (70%) y test (30%)
-src/1-preprocess-dataset-train.py   imputación, análisis bivariado y selección de variables
-src/2-prepare-dataset-test.py       aplica el preprocesamiento a test
-src/3-train-evaluate-models.py      entrena con GridSearchCV y valida con AUC
-src/4-select-best-model.py          elige el mejor modelo y calcula AUC en train y test
-src/5-score-model.py                genera las predicciones (scoring)
+src/0-download-data.py              descarga los datos de entrada desde S3 a data/in/
+src/1-split-dataset.py              separa train (70%) y test (30%)
+src/2-preprocess-dataset-train.py   imputación, análisis bivariado y selección de variables
+src/3-prepare-dataset-test.py       aplica el preprocesamiento a test
+src/4-train-evaluate-models.py      entrena con GridSearchCV y valida con AUC
+src/5-select-best-model.py          elige el mejor modelo y calcula AUC en train y test
+src/6-score-model.py                genera las predicciones (scoring)
 run_pipeline.py                     ejecuta los 6 pasos en orden
 ```
 

@@ -33,7 +33,7 @@ pip install -r requirements.txt
    git clone <url-del-repo>
    cd sprint-equipo-<N>
    git switch -c develop
-   git push -u origin develop
+   git push origin develop
    ```
 4. **Settings → General → Default branch**: cambia a `develop`. *Así los PRs apuntarán a `develop` por defecto.*
 5. **Settings → Branches → Add classic branch protection rule**:
