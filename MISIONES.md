@@ -74,8 +74,8 @@ git switch -c feature/reproducibilidad
 3. Ejecuta `python run_pipeline.py` **dos veces**: el AUC debe ser idéntico en ambas.
 4. Commit y push:
    ```bash
-   git commit -am "Fija semillas para resultados reproducibles"
-   git push -u origin feature/reproducibilidad
+   git commit -m "Fija semillas para resultados reproducibles"
+   git push origin feature/reproducibilidad
    ```
 
 ### DS Junior · `feature/balanceo-clases`
@@ -93,8 +93,8 @@ git switch -c feature/balanceo-clases
 2. Ejecuta `python run_pipeline.py`.
 3. Commit y push:
    ```bash
-   git commit -am "Agrega balanceo de clases al Random Forest"
-   git push -u origin feature/balanceo-clases
+   git commit -m "Agrega balanceo de clases al Random Forest"
+   git push origin feature/balanceo-clases
    ```
 
 ✅ **Listo cuando:** en GitHub, pestaña **Branches**, aparecen las dos ramas `feature/...`.
@@ -160,8 +160,8 @@ El arreglo no puede esperar a la release: se hace desde **`main`**.
 3. Corrige, verifica y sube:
    ```bash
    python run_pipeline.py      # el AUC test debería volver a ~0.73
-   git commit -am "Corrige AUC usando probabilidad de clase positiva"
-   git push -u origin hotfix/auc-probabilidades
+   git commit -m "Corrige AUC usando probabilidad de clase positiva"
+   git push origin hotfix/auc-probabilidades
    ```
 4. Abre **dos** Pull Requests desde `hotfix/auc-probabilidades`:
    - uno con **base: `main`** (para arreglar producción),
@@ -194,8 +194,8 @@ El arreglo no puede esperar a la release: se hace desde **`main`**.
 3. Ejecuta `python run_pipeline.py` y anota el AUC final en el CHANGELOG si quieres.
 4. Commit, push y PR con **base: `main`**:
    ```bash
-   git commit -am "Prepara version 1.0.0"
-   git push -u origin release/v1.0
+   git commit -m "Prepara version 1.0.0"
+   git push origin release/v1.0
    ```
 5. **DS Senior:** revisa, aprueba y fusiona el PR en `main`.
 6. **DS Junior:** en GitHub, **Releases → Draft a new release** → tag `v1.0` sobre `main` → título "v1.0 · Modelo de riesgo de crédito" → **Publish release**.
